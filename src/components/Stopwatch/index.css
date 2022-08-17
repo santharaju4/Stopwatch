@@ -1,0 +1,132 @@
+/* Write CSS here */
+
+.app-container {
+  background-image: url('https://assets.ccbp.in/frontend/react-js/stopwatch-sm-bg.png');
+  height: 100vh;
+  background-size: cover;
+}
+
+@media screen and (min-width: 768px) {
+  .app-container {
+    background-image: url('https://assets.ccbp.in/frontend/react-js/stopwatch-lg-bg.png');
+  }
+}
+
+.title {
+  font-family: 'Roboto';
+  font-weight: bold;
+  font-size: 35px;
+  color: black;
+  text-align: flex-start;
+  padding-top: 50px;
+  padding-left: 60px;
+}
+
+.timer-container {
+  box-shadow: 0px 4px 16px 0px #bfbfbf;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  margin-left: 30px;
+  margin-top: 30px;
+  border-radius: 8px;
+  flex-grow: 1;
+}
+
+@media screen and (min-width: 992px) {
+  .timer-container {
+    align-items: flex-start;
+    margin-left: 160px;
+  }
+}
+
+.timer-display-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 30px;
+}
+
+.timer-title {
+  font-family: 'Roboto';
+  font-size: 18px;
+  font-weight: 500;
+  order: 1;
+  padding-left: 10px;
+}
+
+.time-logo {
+  height: 30px;
+  width: 30px;
+}
+
+.stopwatch {
+  color: #333333;
+  font-family: 'Roboto';
+  font-size: 36px;
+  font-weight: 500;
+}
+
+@media screen and (min-width: 992px) {
+  .stopwatch {
+    font-size: 64px;
+    padding-left: 30px;
+  }
+}
+
+.button-control {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-grow: 2;
+}
+
+.start-button {
+  font-family: 'Roboto';
+  font-size: 13px;
+  margin: 20px;
+  border-radius: 3px;
+  background-color: #1db05f;
+  color: white;
+  border: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  cursor: pointer;
+  outline: none;
+}
+
+.stop-button {
+  font-family: 'Roboto';
+  font-size: 13px;
+  margin: 20px;
+  border-radius: 3px;
+  background-color: #ef0d36;
+  color: white;
+  border: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  cursor: pointer;
+  outline: none;
+}
+
+.reset-button {
+  font-family: 'Roboto';
+  font-size: 13px;
+  margin: 20px;
+  border-radius: 3px;
+  background-color: #eaa800;
+  color: white;
+  border: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  cursor: pointer;
+  outline: none;
+}
